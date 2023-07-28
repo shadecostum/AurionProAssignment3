@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Electricity
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the amount of unit consumed");
+            int unit = Convert.ToInt32(Console.ReadLine());
+            EBill(unit);
+        }
+
+        static void EBill(int unit)
+        {
+            int charge;
+            int totalCharge;
+            if (unit<100)
+            {
+                 charge = unit * 5;
+                 totalCharge = charge + 75;
+                Console.WriteLine("Your Total Electricity charge :"+totalCharge);
+            }
+            else if (unit < 250)
+            {
+                charge = unit * 10;
+                totalCharge = charge + 75;
+                Console.WriteLine("Your Total Electricity charge :" + totalCharge);
+            }
+            else
+            {
+                charge = unit * 20;
+                totalCharge = charge + 75;
+                Console.WriteLine("Your Total Electricity charge :" + totalCharge);
+            }
+        }
+    }
+}
