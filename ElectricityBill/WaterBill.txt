@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Electricity
+namespace WaterBill
 {
     internal class Program
     {
@@ -23,19 +23,19 @@ namespace Electricity
             {
                  charge = unit * 5;
                  totalCharge = charge + 75;
-                Console.WriteLine("Your Total Electricity charge :"+totalCharge);
+                Console.WriteLine("Your Total Water Bill charge :"+totalCharge);
             }
             else if (unit < 250)
             {
                 charge = unit * 10;
                 totalCharge = charge + 75;
-                Console.WriteLine("Your Total Electricity charge :" + totalCharge);
+                Console.WriteLine("Your Total Water Bill charge :" + totalCharge);
             }
             else
             {
                 charge = unit * 20;
                 totalCharge = charge + 75;
-                Console.WriteLine("Your Total Electricity charge :" + totalCharge);
+                Console.WriteLine("Your Total Water Bill charge :" + totalCharge);
             }
         }
     }
